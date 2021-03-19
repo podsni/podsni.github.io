@@ -1,0 +1,4 @@
+for fname in *.webp
+do
+   mv $fname $RANDOM.webp
+done

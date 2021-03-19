@@ -1,0 +1,388 @@
+
+@font-face {
+	font-family: Streamster;
+	src: url(fonts/Streamster.ttf);
+}
+
+@font-face {
+	font-family: Digi;
+	src: url(fonts/DS-DIGI.TTF);
+}
+
+@font-face {
+	font-family: Digibold;
+	src: url(fonts/DS-DIGIB.TTF);
+}
+
+@font-face {
+	font-family: Dyslexic;
+	src: url(fonts/Dyslexic.ttf);
+}
+
+:root {
+	font-size: 1.0em;
+	--textcol: #FF93D8;
+	--bg: #000000;
+	--altbg:#460043;
+	--link: #DA00B0;
+	--linkalt: #FF74FD;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	/*box-shadow: 0 0 5px #00f0ff, 0 0 3px #00f0ff, 0 0 3px #00f0ff, 0 0 3px #00f0ff, 0 0 5px #00f0ff, 0 0 3px #00f0ff inset, 0 0 5px #00f0ff inset, 0 0 5px #00f0ff inset, 0 0 5px #00f0ff inset, 0 0 15px #00f0ff inset;*/
+	/*font-family: Dyslexic;*/
+}
+
+#background {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: -1; /* Ensure div tag stays behind content; -999 might work, too. */
+}
+
+.stretch {
+    width:100%;
+    height:100%;
+}
+
+li img{
+	height: 1.25em;
+}
+
+h1 img{
+	height: 2em;
+
+}
+
+h2 img{
+	height: 1em;
+}
+
+h3 img{
+	height: 1em;
+}
+
+html {
+	line-height: 1.5;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	color: var(--textcol);
+	font-family: sans-serif;
+	background: var(--bg);
+}
+
+a {
+	color: var(--link);
+	text-decoration: none;
+}
+
+a:hover {
+	transition: text-shadow 0.5s, color 0.5s;
+    color: var(--linkalt);
+	text-shadow: 0 0 2px #ff00cc, 0 0 3px #ff00cc, 0 0 5px #ff00cc, 0 0 9px #ff00cc, 0 0 9px #ff00cc;
+}
+
+
+h1:hover {
+	/*transition: text-shadow 3.0s, color 0.5s;*/
+	text-shadow: none;
+}
+
+h2:hover {
+	/*transition: text-shadow 3.0s, color 0.5s;*/
+	/*text-shadow: 0 0 2px #ff00cc, 0 0 3px #ff00cc, 0 0 5px #ff00cc, 0 0 9px #ff00cc, 0 0 9px #ff00cc;*/
+}
+
+body {
+	margin-top: 10px;
+}
+
+/* The two panels on the main page: */
+.mainpanel {
+	margin: 0 auto;
+	max-width: 1000px;
+	padding: 10px;
+}
+
+.mainpanel img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1000px;
+	padding: 10px;
+}
+
+.xpeng {
+	margin: 0 auto 0 auto;
+	display: block;
+	text-align: center;
+	max-width: 1000px;
+	padding: 5px;
+}
+
+.xpeng img {
+	display: inline-block;
+	text-align: center;
+	max-width: 230px;
+	min-width: 230px;
+	border: 3px solid #460043;
+}
+
+
+.xpeng img:hover {
+	transition: text-shadow 0.5s, color 0.5s;
+    color: var(--linkalt);
+	border: 3px solid #AF3BF5;
+}
+
+.mainpanel li {
+    line-height:17px;
+    margin-bottom: 8px;
+}
+
+.bumpanel {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	left: 50%;
+	top: 1px;
+	transform: translateX(-50%);
+	background-color: var(--altbg);
+	padding: 15px;
+	height: auto;
+	margin-left: auto ;
+	margin-right: auto ;
+	text-align: center;
+	max-width: 1000px;
+	min-width: 1000px;
+	box-shadow: 0 0 2px #00f0ff, 0 0 3px #00f0ff, 0 0 3px #00f0ff, 0 0 9px #00f0ff, 0 0 9px #00f0ff, 0 0 2px #00f0ff inset, 0 0 4px #00f0ff inset, 0 0 3px #00f0ff inset, 0 0 2px #00f0ff inset, 0 0 1px #00f0ff inset;
+}
+
+.bumpanel a {
+    display: inline-flex;
+}
+
+.bumpanel a img {
+    margin-right: 5px;
+}
+
+
+.asspanel {
+	display: block;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	left: 50%;
+	bottom: 23px;
+	transform: translateX(-50%);
+	padding: 9px;
+	height: auto;
+	margin-left: auto ;
+	margin-right: auto ;
+	text-align: center;
+	max-width: 1000px;
+	min-width: 1000px;
+}
+
+.asspanel a {
+    display: inline-flex;
+}
+
+.asspanel a img {
+    margin-right: 5px;
+}
+
+.sidepanel a {
+	color: #E075BC;
+}
+
+.sidepanel a:hover {
+	/*color: #144DF1;*/
+	transition: text-shadow 0.5s, color 0.5s;
+	text-shadow: 0 0 2px #ff00cc, 0 0 3px #ff00cc, 0 0 5px #ff00cc, 0 0 9px #ff00cc, 0 0 9px #ff00cc;
+}
+
+.sidepanel ul li {
+	font-size:20px;
+	margin:0 0 0 0;
+}
+
+.sidepanel ul li ul li {
+	font-size:18px;
+	margin: 0px;
+	list-style: none;
+}
+
+a:hover img {
+    background: #9F007E;
+}
+
+header #byline {
+	font-size: 0.8em;
+	margin-top: -1.6em;
+	margin-bottom: 3em;
+}
+
+/* Blog entry: */
+.entry {
+	padding: 30px;
+	border-radius: 0 1px 1px 0;
+	margin-bottom: 20px;
+	background: #2a2a35;
+	border-left: 10px solid #5982c1;
+}
+
+.entry h2 {
+	margin: 5px auto 2px auto;
+}
+
+footer strong {
+	font-weight: bold;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dt img {
+	height: 1em;
+}
+
+/* Class name of video thumbnails in videos.html */
+.image {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+img.centered {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+img {
+    /* border-radius: 4px; */
+}
+
+
+code {
+	color: green;
+	font-family: monospace;
+	overflow-x: auto;
+	background-color: black;
+	white-space: -moz-pre-wrap;
+	white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    border: 2px solid pink;
+    border-radius: 8px;
+    padding: 5px;
+    display: block;
+}
+
+pre {
+    background: var(--color11);
+    border: 1px solid var(--color10);
+    border-radius: 4px;
+    padding: 5px;
+    display: block;
+    /* background: #1d2021; */
+}
+
+.indexcolname {
+	max-width: 100px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.indexcoldesc {
+	font-weight: bold;
+	padding: 10px;
+	font-size: large;
+}
+
+.indexcollastmod,.indexcolsize {
+	font-size: small;
+}
+
+#indexlist {
+	margin: 0px auto;
+}
+
+.centerpiece {
+	align: center;
+	margin: 0px auto;
+}
+
+h1 {
+	padding: 10px;
+	transition-duration: 0.9s;
+	color: #B634F5;
+	font-weight:bold;
+	margin: 0 auto 0 auto;
+	text-align: center;
+	/*text-shadow: 0 0 10px #00f0ff, 0 0 10px #00f0ff, 0 0 15px #00f0ff, 0 0 15px #00f0ff, 0 0 10px #00f0ff;*/
+}
+
+h2 {
+	/*font-family: Digibold;*/
+	color: #644997;
+	font-weight:bold;
+}
+
+.imgcont {
+	text-align: center;
+	position: relative;
+}
+
+.imgconttext {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: xx-large;
+	color: black;
+	text-shadow:
+	-1px -1px 0 white,
+	1px -1px 0 white,
+	-1px 1px 0 white,
+	1px 1px 0 white;
+}
+
+.hiddiv {
+	display: none;
+}
+
+.qr:hover .hiddiv {
+	display: block;
+	float: right;
+}
+
+.hiddiv img {
+	height: 200px;
+}
+
+.ytvid {
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding-bottom: 56.25%;
+}
+
+.video {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
