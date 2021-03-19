@@ -4,3 +4,5 @@
 3. Persatuan Indonesia
 4. Kerakyatan yang dipimpin oleh himat kebijak dalam permusyawarantan / perwakilan
 5. Keadilan sosial bagi seluruh rakyat indonesia
+
+$$1^2sqr10^12$$
