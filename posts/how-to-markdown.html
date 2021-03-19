@@ -30,7 +30,7 @@
 <header>
 	<h1><a href="../">HexDSL</a></h1>
 	<h2>How to markdown</h2>
-	<div id="byline">by HexDSL on 18 Oct '19</div>
+	<div id="byline">by Bangundwir on 18 Okt '19</div>
 </header>
 
 <article>
@@ -39,73 +39,7 @@
 <p>At this point Markdown is a sort of idea that gets bolted onto things. Because of this the rendered output maybe different depending what service you are using. When compiling/rendering it out to LaTex, Groff or HTML you should be fine because pandoc is forgiving and smart (and if you are not converting using pandoc, I need you to take a good long think about your life and… just, I don’t know… read a damned book or something because computers are not for you.) Odd website implementations on the other hand are a total crap shoot. If you are using a GUI tool for markdown, stop it right now and write an appology email to me.</p>
 <p>Heres the <a href="https://en.wikipedia.org/wiki/Markdown">Wikipedia page</a> about Markdown. Good page that.</p>
 <p>Anyway, here are the basics…</p>
-<hr />
-<h3 id="the-basics">The Basics:</h3>
-<p><code># heading</code></p>
-<p>looks like</p>
-<h1 id="heading">heading</h1>
-<p>or</p>
-<p><code>## heading 2</code></p>
-<p>looks like</p>
-<h2 id="heading-2">heading 2</h2>
-<p>You can go up to about 4 <code>#### headings</code> until it all looks the same but you CAN add more.</p>
-<p>Below are more basics, these are inside a table. We talk about tables at the bottom of this document.</p>
-<table>
-<thead>
-<tr class="header">
-<th>You write</th>
-<th>You get</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><code>**BOLD**</code></td>
-<td><strong>BOLD</strong></td>
-</tr>
-<tr class="even">
-<td><code>*ITALIC*</code></td>
-<td><em>ITALIC</em></td>
-</tr>
-<tr class="odd">
-<td><code>***BOLD ITALIC**</code></td>
-<td><strong><em>bold italic</em></strong></td>
-</tr>
-<tr class="even">
-<td><code>**bold** then *italic*</code></td>
-<td><strong>bold</strong> then <em>italic</em></td>
-</tr>
-<tr class="odd">
-<td><code>**bold *bolditalic* bold**</code></td>
-<td><strong>bold <em>bold italic</em> bold</strong></td>
-</tr>
-<tr class="even">
-<td><code>[LINK TEXT](URL)</code></td>
-<td><a href="http://hexdsl.co.uk/">LINK TEXT</a></td>
-</tr>
-<tr class="odd">
-<td><code>![](url.png)</code></td>
-<td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Markdown-mark.svg/64px-Markdown-mark.svg.png" /></td>
-</tr>
-<tr class="even">
-<td><code>![ALT TEXT](url.png)</code></td>
-<td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Markdown-mark.svg/64px-Markdown-mark.svg.png" alt="ALT TEXT" /></td>
-</tr>
-</tbody>
-</table>
-<hr />
 <p>Horizontal Rule: <code>---</code> as above, and below</p>
-<hr />
-<h3 id="lists">LISTS</h3>
-<pre><code>1. a list
-2. a list
-3. a list</code></pre>
-<p>looks like this</p>
-<ol type="1">
-<li>a list</li>
-<li>a list</li>
-<li>a list</li>
-</ol>
-<hr />
 <h3 id="bullets">BULLETS</h3>
 <pre><code>* item
 * item
@@ -116,63 +50,6 @@
 <li>Item</li>
 <li>Item</li>
 </ul>
-<hr />
-<h3 id="quoting-and-code">Quoting and code:</h3>
-<p><code>&gt;BLOCK QUOTE</code> looks like… &gt;Block Quote</p>
-<p>To wrote CODE inline you can use <code>a back tick, thats the little tick next to the '1' key</code> its hard to give an example in rendered markdown because it screws with the rendering thingy.</p>
-<p>Another way to write code is to add a TAB or 4 spaces at the start of a line</p>
-<pre><code>like this
-its easy
-its 4 spaces</code></pre>
-<p>Remember that maybe a Tab OR 4 spaces depending on the implementation of markdown you are using. Both work fine in Pandoc and the website hackmd.io (I use that a lot when shaing show notes for my podcast <a href="http://xpenguin.club">.XPenguin</a>) but may not work on reddit or forums.</p>
-<p>Most renderers alway allow three back ticks at the start then code, then three back ticks at the end. I think the Backtick is called a“grave” but not sure enough to argue…</p>
-<pre><code>That would be SiLlY!
-its good for copy pasta though!
-Also good for large code chuncks.
-I use it for ASCII art headers in my Blog posts.</code></pre>
-<p>Remember to use three back ticks to close the section at the end or it will keep going to the end of the document.</p>
-<h3 id="tables">Tables</h3>
-<pre><code>| Header | header |
-|--------|--------|
-|item    | item   |
-|item    | item   |
-|item    | item   |
-|item    | item   |</code></pre>
-<p>Looks like</p>
-<table>
-<thead>
-<tr class="header">
-<th>Header</th>
-<th>header</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>item</td>
-<td>item</td>
-</tr>
-<tr class="even">
-<td>item</td>
-<td>item</td>
-</tr>
-<tr class="odd">
-<td>item</td>
-<td>item</td>
-</tr>
-<tr class="even">
-<td>item</td>
-<td>item</td>
-</tr>
-</tbody>
-</table>
-<p>Thats a table! - I feel like the visuals are enough of an explinations for this to be honest.</p>
-<h2 id="page-breaks">Page breaks</h2>
-<p>If you are using pandoc, you can use <code>\pagebreak</code> on a new line to tell if you want a new page, this is a LaTex command that Pandoc applies universally. Dont expect it to work all over the palce like some kind of hippy!</p>
-<h3 id="please-sir-can-i-have-some-more">Please sir, can I have some more…</h3>
-<p>No! - This little document has covered most of the markdown things you will need. If I think of anything I missed or want to add later, I’ll update this document. If you have any feedback on it please do email/tweet/tag or toot me. As it stands, I think I did okay.</p>
-<p>If you are looking for advice, I have none. I use markdown wherever I am ABLE to use markdown as it allows me to express my formatting in a very precise way. Its not as precise as Groff, Troff or LaTex but its way better than a nasty GUI!</p>
-<p>I write everything I do in markdown where possible. You can write a whole book in it if you like, just convert to whatever your publisher wants after. As for tools, you don’t need converters, or GUI things for markdown. Take the time to learn it. I don’t even need a preview at this point. I think I have somehow started Compiling it with my eyes. Personally I write everything in a Mardown aware VIM setup. I convert with Pandoc (as that’s the correct way to do it) and I have had good experiences.</p>
-<p>Hope this document and the accompanying video helped. Don’t forget, I have a Patreon</p>
 </article>
 
 </div>
