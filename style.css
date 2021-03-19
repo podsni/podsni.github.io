@@ -85,7 +85,7 @@ a {
 a:hover {
 	transition: text-shadow 0.5s, color 0.5s;
     color: var(--linkalt);
-	text-shadow: 0 0 2px #ff00cc, 0 0 3px #ff00cc, 0 0 5px #ff00cc, 0 0 9px #ff00cc, 0 0 9px #ff00cc;
+	text-shadow: 0 0 2px #dbdbdd, 0 0 3px #dbdbdd, 0 0 5px #dbdbdd, 0 0 9px #dbdbdd, 0 0 9px #dbdbdd;
 }
 
 
@@ -96,7 +96,7 @@ h1:hover {
 
 h2:hover {
 	/*transition: text-shadow 3.0s, color 0.5s;*/
-	/*text-shadow: 0 0 2px #ff00cc, 0 0 3px #ff00cc, 0 0 5px #ff00cc, 0 0 9px #ff00cc, 0 0 9px #ff00cc;*/
+	/*text-shadow: 0 0 2px #dbdbdd, 0 0 3px #dbdbdd, 0 0 5px #dbdbdd, 0 0 9px #dbdbdd, 0 0 9px #dbdbdd;*/
 }
 
 body {
@@ -200,13 +200,13 @@ body {
 }
 
 .sidepanel a {
-	color: #E075BC;
+	color: #7198ec;
 }
 
 .sidepanel a:hover {
 	/*color: #144DF1;*/
 	transition: text-shadow 0.5s, color 0.5s;
-	text-shadow: 0 0 2px #ff00cc, 0 0 3px #ff00cc, 0 0 5px #ff00cc, 0 0 9px #ff00cc, 0 0 9px #ff00cc;
+	text-shadow: 0 0 2px #5399e9, 0 0 3px #5399e9, 0 0 5px #5399e9, 0 0 9px #5399e9, 0 0 9px #5399e9;
 }
 
 .sidepanel ul li {
@@ -221,7 +221,7 @@ body {
 }
 
 a:hover img {
-    background: #9F007E;
+    background: #042d5c;
 }
 
 header #byline {
@@ -326,7 +326,7 @@ pre {
 h1 {
 	padding: 10px;
 	transition-duration: 0.9s;
-	color: #B634F5;
+	color: #6a64a5;
 	font-weight:bold;
 	margin: 0 auto 0 auto;
 	text-align: center;
@@ -335,7 +335,7 @@ h1 {
 
 h2 {
 	/*font-family: Digibold;*/
-	color: #644997;
+	color: #f2f0f7;
 	font-weight:bold;
 }
 
